@@ -17,6 +17,34 @@
   padding: 0;
 }
 
+.autocomplete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.autocomplete-input {
+  text-align: center;
+  height: 25px;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.active-autocomplete-item {
+  background: lightgray;
+}
+
+.suggestions {
+  list-style-type: none;
+  width: auto;
+  margin: 10px auto;
+}
+
+.suggestions li:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;

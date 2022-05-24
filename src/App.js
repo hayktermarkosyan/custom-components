@@ -3,6 +3,8 @@ import './App.css';
 import Button from './components/button/Button';
 import CloseIcon from './components/CloseIcon';
 import Modal from './components/modal/Modal';
+import { autoCompleteData } from "./components/autocomplete/autoCompleteData";
+import AutoComplete from './components/autocomplete/AutoComplete';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -18,26 +20,8 @@ function App() {
 
       <Modal show={show} onClose={() => setShow(false)}>
         <div className="content">
-          <Button 
-            children="blocked button" 
-            type="block" 
-            btnColor="grey"
-            labelColor='black'
-          />
-
-          <Button 
-            children="disabled button" 
-            disabled 
-            btnColor="red"
-            labelColor='black'
-          />
-
-          <Button 
-            children="rounded button" 
-            type="rounded" 
-            btnColor='yellow'
-            labelColor='red'
-          />
+          
+          <AutoComplete data={autoCompleteData} />
 
           <Button 
             children={

@@ -1,0 +1,22 @@
+export const autoCompleteData = [
+    "Acura",
+    "Alfa-Romeo",
+    "Audi",
+    "BMW",
+    "Bentley",
+    "Buick",
+    "Cadilac",
+    "Chevrolet",
+    "Chrysler",
+    "GMC",
+    "Honda",
+    "Hummer",
+    "Hyundai",
+    "Infinity",
+    "Isuzu",
+    "Jaguar",
+    "Jeep",
+    "Kia",
+    "Lamborghini",
+    "Lexus"
+]
